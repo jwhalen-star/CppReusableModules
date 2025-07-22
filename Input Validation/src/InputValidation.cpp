@@ -7,6 +7,8 @@ bool isInteger(int& inputInteger) {
     if (cin >> inputInteger) {
         return true;
     } else {
+        cin.clear();
+        cin.ignore(10000, '\n');
         return false;
     }
 }
